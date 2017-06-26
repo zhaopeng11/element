@@ -1,0 +1,270 @@
+@function rem($px) {
+  @return $px / 50+rem;
+}
+
+header {
+  background: rgba(7, 17, 27, 0.5);
+  width: 100%;
+  .h-top {
+    position: relative;
+    height: rem(212);
+    border: 1px solid transparent;
+    .h-box {
+      margin-top: rem(48);
+      margin-left: rem(48);
+      .box-img {
+        float: left;
+        width: rem(128);
+        height: rem(128);
+        background: white;
+        border-radius: rem(4);
+        margin-right: rem(32);
+      }
+      .box-txt {
+        position: relative;
+        float: left;
+        width: 10rem;
+        .b-txt1 {
+          font-size: rem(32);
+          color: rgb(255, 255, 255);
+          font-weight: bold;
+          margin-top: rem(4);
+          img {
+            width: rem(60);
+            height: rem(36);
+            vertical-align: middle;
+            padding-right: rem(12);
+          }
+        }
+        .b-txt2 {
+          font-size: rem(24);
+          color: rgb(255, 255, 255);
+          margin-top: rem(16);
+        }
+        .b-txt3 {
+          font-size: rem(20);
+          color: rgb(255, 255, 255);
+          margin-top: rem(20);
+          float: left;
+          img {
+            width: rem(24);
+            height: rem(24);
+            vertical-align: middle;
+            padding-right: rem(8);
+          }
+        }
+        .b-num {
+          position: absolute;
+          width: rem(80);
+          height: rem(48);
+          border-radius: 16px;
+          font-size: rem(20);
+          color: white;
+          font-weight: 200;
+          text-align: center;
+          line-height: rem(48);
+          background: rgba(7, 17, 27, 0.5);
+          right: rem(24);
+          top: rem(92);
+        }
+      }
+    }
+  }
+  .notice {
+    width: 15rem;
+    height: rem(56);
+    padding-left: rem(24);
+    line-height: rem(56);
+    font-size: rem(20);
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    background-color: rgba(7, 17, 27, 0.2);
+    box-sizing: border-box;
+    img {
+      width: rem(44);
+      height: rem(24);
+      vertical-align: middle;
+      padding-right: rem(8);
+    }
+    div {
+      float: left;
+    }
+    .not-txt {
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 12rem;
+    }
+  }
+}
+
+section {
+
+  .goods {
+    height: rem(80);
+    border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+    ul li {
+      float: left;
+      width: 33.3%;
+      font-size: rem(28);
+      line-height: rem(80);
+      text-align: center;
+      list-style: none;
+      a {
+        color: rgb(77, 85, 93);
+      }
+    }
+  }
+  .classify {
+    float: left;
+    ul > li {
+      width: rem(160);
+      //height: rem(108);
+      background-color: #f3f5f7;
+      line-height: rem(95);
+
+      a {
+        display: block;
+        color: rgb(77, 85, 93);
+        font-size: rem(24);
+        font-weight: 200;
+        width: rem(113);
+        height: rem(108);
+        border-bottom: 1px solid rgba(7, 17, 27, 0.1) !important;
+        margin: 0 auto;
+        text-align: left;
+        img {
+          width: rem(24);
+          height: rem(24);
+          vertical-align: middle;
+        }
+      }
+    }
+    #one {
+      line-height: rem(45);
+    }
+  }
+  .menu {
+    float: left;
+    .feature {
+      width: 11.8rem;
+      height: rem(54);
+      background-color: #f3f5f7;
+      border-left: 3px solid #d9dde1;
+      font-size: rem(24);
+      color: rgb(147, 153, 159);
+      line-height: rem(52);
+      padding-left: rem(28);
+      box-sizing: border-box;
+    }
+    .menu-eag {
+      padding: rem(36);
+      width: 10.3rem;
+      border-bottom: 1px solid rgba(7, 17, 27, 0.1) !important;
+      .menu-pic {
+        float: left;
+        width: rem(120);
+        height: rem(120);
+        background: lightgray;
+        margin-right: rem(20);
+      }
+      .money {
+        float: left;
+        width: 7rem;
+        .m-mon {
+          text-decoration: line-through;
+          font-size: rem(20);
+          color: rgb(147, 153, 159);
+          padding-left: rem(16);
+        }
+        .menu-txt1 {
+          font-size: rem(28);
+          color: rgb(7, 17, 27);
+        }
+        .menu-txt2 {
+          font-size: rem(20);
+          color: rgb(147, 153, 159);
+          padding-top: rem(16);
+        }
+        .menu-txt3 {
+          float: left;
+          font-size: rem(28);
+          color: red;
+          font-weight: 700;
+          padding-top: rem(12);
+          span {
+            font-size: rem(20);
+          }
+        }
+        .menu-pic1{
+          float: right;
+
+          img{
+            width: rem(40);
+            height: rem(40);
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #141d27;
+  width: 15rem;
+  height: rem(104);
+  padding-left: rem(36);
+  font-size: rem(32);
+  color: rgba(255,255,255,0.4);
+  font-weight: 700;
+  line-height: rem(108);
+  .round{
+    position: absolute;
+    width: rem(108);
+    height: rem(100);
+    background:#141d27;;
+    border-radius: 50%;
+    //border: rem(12) solid #141d27;
+    top: rem(-22);
+  }
+  .round1{
+    position: absolute;
+    z-index: 1;
+    width: rem(88);
+    height: rem(88);
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    top: rem(-12);
+    left: rem(45);
+  }
+  .f-money{
+    position: absolute;
+    left: rem(160);
+    border-right: 1px solid rgba(255,255,255,0.4);
+    padding-right: rem(24);
+    height: rem(60);line-height: rem(60);
+    top: rem(25);
+  }
+  .f-money1{
+    position: absolute;
+    left: rem(256);
+    font-weight: 200;
+    font-size: rem(24);
+    line-height: rem(110);
+  }
+  .f-money2{
+    position: absolute;
+    right: rem(30);
+    width: rem(210);
+    text-align: center;
+    font-size: rem(24);
+    line-height: rem(104);
+    height: rem(104);
+    background:rgba(255,255,255,0.4) ;
+  }
+}
+
