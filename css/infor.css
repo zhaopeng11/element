@@ -1,0 +1,75 @@
+body, html {
+  height: 100%;
+  width: 100%; }
+
+section {
+  height: 100%;
+  width: 100%;
+  background: rgba(7, 17, 27, 0.8); }
+  section .title {
+    width: 5.8rem;
+    font-size: 0.64rem;
+    font-weight: 700;
+    color: white;
+    line-height: 0.64rem;
+    margin: 0 auto;
+    padding-top: 2.56rem; }
+  section .star {
+    width: 11rem;
+    margin: 0.64rem auto;
+    height: 0.96rem;
+    padding-bottom: 1.12rem; }
+    section .star img {
+      padding-left: 0.8rem;
+      width: 0.9rem;
+      height: 0.88rem; }
+  section .infor {
+    padding: 0 1.44rem;
+    text-align: center;
+    position: relative; }
+    section .infor .infor-bor {
+      position: absolute;
+      width: 30%;
+      left: 1.44rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2); }
+    section .infor .infor-bor1 {
+      position: absolute;
+      width: 30%;
+      right: 1.44rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.2); }
+    section .infor .infor-txt {
+      position: absolute;
+      top: -0.3rem;
+      left: 43%;
+      font-size: 0.56rem;
+      font-weight: 700;
+      color: white; }
+  section .infor-text {
+    padding-top: 0.96rem;
+    padding-left: 1.92rem;
+    padding-bottom: 1.12rem; }
+    section .infor-text ul > li {
+      list-style: none;
+      font-size: 0.48rem;
+      font-weight: 200;
+      color: white;
+      line-height: 0.48rem;
+      padding-bottom: 0.48rem; }
+      section .infor-text ul > li img {
+        width: 0.64rem;
+        height: 0.64rem;
+        vertical-align: middle;
+        padding-right: 0.24rem; }
+  section .infor-self {
+    padding: 0.96rem 1.92rem 1.12rem 1.92rem;
+    font-size: 0.48rem;
+    font-weight: 200;
+    color: white;
+    line-height: 0.96rem; }
+  section .close {
+    font-size: 1.28rem;
+    color: rgba(255, 255, 255, 0.5);
+    width: 0.6rem;
+    margin: 3rem auto; }
+
+/*# sourceMappingURL=infor.css.map */
