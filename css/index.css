@@ -1,6 +1,9 @@
 header {
   background: rgba(7, 17, 27, 0.5);
-  width: 100%; }
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
   header .h-top {
     position: relative;
     height: 4.24rem;
@@ -78,92 +81,95 @@ header {
       white-space: nowrap;
       overflow: hidden;
       width: 12rem; }
+  header .goods {
+    height: 1.6rem;
+    border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+    background: white; }
+    header .goods ul li {
+      float: left;
+      width: 33.3%;
+      font-size: 0.56rem;
+      line-height: 1.6rem;
+      text-align: center;
+      list-style: none; }
+      header .goods ul li a {
+        color: #4d555d; }
 
-section .goods {
-  height: 1.6rem;
-  border-bottom: 1px solid rgba(7, 17, 27, 0.1); }
-  section .goods ul li {
-    float: left;
-    width: 33.3%;
-    font-size: 0.56rem;
-    line-height: 1.6rem;
-    text-align: center;
-    list-style: none; }
-    section .goods ul li a {
-      color: #4d555d; }
-section .classify {
-  float: left; }
-  section .classify ul > li {
-    width: 3.2rem;
-    background-color: #f3f5f7;
-    line-height: 1.9rem; }
-    section .classify ul > li a {
-      display: block;
-      color: #4d555d;
-      font-size: 0.48rem;
-      font-weight: 200;
-      width: 2.26rem;
-      height: 2.16rem;
-      border-bottom: 1px solid rgba(7, 17, 27, 0.1) !important;
-      margin: 0 auto;
-      text-align: left; }
-      section .classify ul > li a img {
-        width: 0.48rem;
-        height: 0.48rem;
-        vertical-align: middle; }
-  section .classify #one {
-    line-height: 0.9rem; }
-section .menu {
-  float: left; }
-  section .menu .feature {
-    width: 11.8rem;
-    height: 1.08rem;
-    background-color: #f3f5f7;
-    border-left: 3px solid #d9dde1;
-    font-size: 0.48rem;
-    color: #93999f;
-    line-height: 1.04rem;
-    padding-left: 0.56rem;
-    box-sizing: border-box; }
-  section .menu .menu-eag {
-    padding: 0.72rem;
-    width: 10.3rem;
-    border-bottom: 1px solid rgba(7, 17, 27, 0.1) !important; }
-    section .menu .menu-eag .menu-pic {
-      float: left;
-      width: 2.4rem;
-      height: 2.4rem;
-      background: lightgray;
-      margin-right: 0.4rem; }
-    section .menu .menu-eag .money {
-      float: left;
-      width: 7rem; }
-      section .menu .menu-eag .money .m-mon {
-        text-decoration: line-through;
-        font-size: 0.4rem;
-        color: #93999f;
-        padding-left: 0.32rem; }
-      section .menu .menu-eag .money .menu-txt1 {
-        font-size: 0.56rem;
-        color: #07111b; }
-      section .menu .menu-eag .money .menu-txt2 {
-        font-size: 0.4rem;
-        color: #93999f;
-        padding-top: 0.32rem; }
-      section .menu .menu-eag .money .menu-txt3 {
-        float: left;
-        font-size: 0.56rem;
-        color: red;
-        font-weight: 700;
-        padding-top: 0.24rem; }
-        section .menu .menu-eag .money .menu-txt3 span {
-          font-size: 0.4rem; }
-      section .menu .menu-eag .money .menu-pic1 {
-        float: right; }
-        section .menu .menu-eag .money .menu-pic1 img {
-          width: 0.8rem;
-          height: 0.8rem;
+section {
+  margin-top: 6.98rem; }
+  section .classify {
+    float: left; }
+    section .classify ul > li {
+      width: 3.2rem;
+      background-color: #f3f5f7;
+      line-height: 1.9rem; }
+      section .classify ul > li a {
+        display: block;
+        color: #4d555d;
+        font-size: 0.48rem;
+        font-weight: 200;
+        width: 2.26rem;
+        height: 2.16rem;
+        border-bottom: 1px solid rgba(7, 17, 27, 0.1) !important;
+        margin: 0 auto;
+        text-align: left; }
+        section .classify ul > li a img {
+          width: 0.48rem;
+          height: 0.48rem;
           vertical-align: middle; }
+    section .classify #one {
+      line-height: 0.9rem; }
+  section .menu {
+    float: left; }
+    section .menu .feature {
+      width: 11.8rem;
+      height: 1.08rem;
+      background-color: #f3f5f7;
+      border-left: 3px solid #d9dde1;
+      font-size: 0.48rem;
+      color: #93999f;
+      line-height: 1.04rem;
+      padding-left: 0.56rem;
+      box-sizing: border-box; }
+    section .menu .menu-eag {
+      padding: 0.72rem;
+      width: 10.3rem;
+      border-bottom: 1px solid rgba(7, 17, 27, 0.1) !important; }
+      section .menu .menu-eag .menu-pic {
+        float: left;
+        width: 2.4rem;
+        height: 2.4rem;
+        background: lightgray;
+        margin-right: 0.4rem; }
+      section .menu .menu-eag .money {
+        float: left;
+        width: 7rem; }
+        section .menu .menu-eag .money .m-mon {
+          text-decoration: line-through;
+          font-size: 0.4rem;
+          color: #93999f;
+          padding-left: 0.32rem; }
+        section .menu .menu-eag .money .menu-txt1 {
+          font-size: 0.56rem;
+          color: #07111b; }
+        section .menu .menu-eag .money .menu-txt2 {
+          font-size: 0.4rem;
+          color: #93999f;
+          padding-top: 0.32rem; }
+        section .menu .menu-eag .money .menu-txt3 {
+          float: left;
+          font-size: 0.56rem;
+          color: red;
+          font-weight: 700;
+          padding-top: 0.24rem; }
+          section .menu .menu-eag .money .menu-txt3 span {
+            font-size: 0.4rem; }
+        section .menu .menu-eag .money .menu-pic1 {
+          float: right; }
+          section .menu .menu-eag .money .menu-pic1 img {
+            width: 0.8rem;
+            height: 0.8rem;
+            vertical-align: middle; }
 
 footer {
   position: fixed;

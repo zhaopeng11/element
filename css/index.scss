@@ -5,6 +5,9 @@
 header {
   background: rgba(7, 17, 27, 0.5);
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
   .h-top {
     position: relative;
     height: rem(212);
@@ -96,13 +99,10 @@ header {
       width: 12rem;
     }
   }
-}
-
-section {
-
   .goods {
     height: rem(80);
     border-bottom: 1px solid rgba(7, 17, 27, 0.1);
+    background: white;
     ul li {
       float: left;
       width: 33.3%;
@@ -115,6 +115,10 @@ section {
       }
     }
   }
+}
+
+section {
+  margin-top: rem(349);
   .classify {
     float: left;
     ul > li {
